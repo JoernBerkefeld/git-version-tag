@@ -1,0 +1,41 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "plugins": ["mocha", "prettier"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "arrow-body-style": ["error", "as-needed"],
+        "curly": "error",
+        "mocha/no-exclusive-tests": "error",
+        "no-console": "off",
+        "no-var": "error",
+        "prefer-const": "error",
+        "prettier/prettier": "warn",
+
+        "require-jsdoc": [
+            "warn",
+            {
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": true,
+                    "ClassDeclaration": true,
+                    "ArrowFunctionExpression": false,
+                    "FunctionExpression": true
+                }
+            }
+        ],
+        "valid-jsdoc": "error",
+        "spaced-comment": ["warn", "always", { "block": { "exceptions": ["*"], "balanced": true } }]
+    }
+}

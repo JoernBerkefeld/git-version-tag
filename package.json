@@ -1,0 +1,42 @@
+{
+    "name": "git-version-tag",
+    "version": "1.0.0",
+    "description": "Fetch the version tags from a repo",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "node test/index.js"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "author": "Jörn Berkefeld <joern.berkefeld@gmail.com>",
+    "license": "BSD-2-Clause",
+    "keywords": [
+        "latest",
+        "current",
+        "version",
+        "tag",
+        "git",
+        "github",
+        "bitbucket",
+        "gitlab",
+        "package"
+    ],
+    "dependencies": {
+        "semver": "^5.6.0",
+        "simple-git": "^2.17.0"
+    },
+    "repository": "github:joernberkefeld/git-version-tag",
+    "bugs": {
+        "url": "https://github.com/joernberkefeld/git-version-tag/issues"
+    },
+    "homepage": "https://github.com/joernberkefeld/git-version-tag#readme",
+    "devDependencies": {
+        "eslint": "^7.6.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "npm-check": "^5.9.2",
+        "prettier": "^2.0.5"
+    }
+}
