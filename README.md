@@ -1,5 +1,7 @@
 # Git Version Tag
 
+[![NPM](https://nodei.co/npm/git-version-tag.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/git-version-tag/)
+
 This package allows you fetch all or just the latest version of any git repo, independent of whether it's hosted on Github, Gitlab or Bitbucket and their respective Enterprise versions.
 
 It does not handle authentication but instead assumes that this is used on repos that the user already has access to and has logged in using system-side key managers.
