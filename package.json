@@ -1,6 +1,6 @@
 {
     "name": "git-version-tag",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Fetch the version tags from a repo",
     "main": "index.js",
     "scripts": {
