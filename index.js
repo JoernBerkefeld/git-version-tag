@@ -6,10 +6,10 @@ const semver = require('semver');
 const simpleGit = require('simple-git');
 
 /**
- *
- * @param {String} remoteUrl
+ * Fetch the version tags from a repo
+ * @param {String} remoteUrl url of your repo (https://.../abc.git)
  * @param {Object} [options]
- * @param {Boolean} [options.getLatest]
+ * @param {Boolean} [options.getLatest] true: return latest version as string; false: return all versions as Array of Strings
  * @returns {Promise<String[]|String>}
  */
 async function gitVersionTag(remoteUrl, options) {
